@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="login and signup styling.css">
+    <script type=text/javascript>
+        function validate()
+         {
+            var x=document.getElementById("text1")
+            if(x.value.length<6)
+            {
+                alert("username too small.It must be atleast 6 characters of english alphabet.");
+            }
+        }
+        function validate1()
+         {
+            var x=document.getElementById("text2").value;
+            var regx=/^([a-z0-9\.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})?$/;
+            if(!regx.test(x))
+            {
+                alert("invalid email.");
+            }
+        }
+        function validate2()
+         {
+            var x=document.getElementById("text3").value;
+           
+            if(x.length<8)
+            {
+                alert("password too short.");
+            }
+            if(x.search(/[0-9]/)==-1)
+            {
+                alert("Atleast 1 number must be present.");
+            }
+            if(x.search(/[a-z]/)==-1)
+            {
+                alert("Atleast 1 lowercase character must be present.");
+            }
+            if(x.search(/[A-Z]/)==-1)
+            {
+                alert("Atleast 1 uppercase character must be present.");
+            }
+            if(x.search(/[! @ # $ % ^ & * ( ) _ ]/)==-1)
+            {
+                alert("Atleast 1 special character must be present.");
+            }
+
+        }
+        function validate3()
+         {
+            var x=document.getElementById("text4").value;
+            var y=document.getElementById("text3").value;
+            if(x!=y)
+            {
+                alert("password did'nt match.");
+            }
+        }
+        function validate4()
+         {
+            
+            if(document.getElementById("text1").value=="")
+            {
+                alert("please enter the Username field.");
+            }
+            if(document.getElementById("text2").value=="")
+            {
+                alert("please enter the  Email field.");
+            }
+            if(document.getElementById("text3").value=="")
+            {
+                alert("please enter the Password field.");
+            }
+            if(document.getElementById("text4").value=="")
+            {
+                alert("please enter the Confirm Password field.");
+            }
+            else
+            {
+                alert("Thank you for signing up");
+            }
+            
+        }
+        function validate5()
+         {
+            var x=document.getElementById("text5");
+            if(x.value.length<6)
+            {
+                alert("Username is incorrect,It must be atleast 6 characters of english  alphabet.");
+            }
+        }
+        function validate6()
+         {
+            var x=document.getElementById("text6").value;
+            if((x.search(/[0-9]/)==-1)||(x.search(/[a-z]/)==-1)||(x.search(/[A-Z]/)==-1)||(x.search(/[! @ # $ % ^ & * ( ) _ ]/)==-1))
+            {
+                alert("Password is incorrect.");
+            }
+        }
+        function validate7()
+         {
+            if(document.getElementById("text5").value=="")
+            {
+                alert("please fill Username field.");
+            }
+            if(document.getElementById("text6").value=="")
+            {
+                alert("please fill password field.");
+            }
+            else
+            {
+                alert("Thanks for successfully logging in.It seems u have already registered.");
+            }
+        }
+            
+    </script>
+</head>
+<body>
+    
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+            <img src="sports dark.jpg" alt="">
+            <h1>Welcome !</h1>
+            <h3>Already have an account ?</h3>
+            <button type="button" class="switch-btn" onclick="location.reload()">Login</button>
+        </div>
+        <div id="left-form" class="form fade-in-element">
+            <h1>Login</h1>
+            <form action="" method="post">
+                <input type="text" id="text5" name="user-name" class="input-box" onchange="validate5()" placeholder="User Name">
+                <input type="password" id="text6" name="user-pass" class="input-box"  onchange="validate6()" placeholder="Password">
+                
+                <input type="button" onclick="validate7()"  name="login-btn" class="btn" value="Login">
+            </form>
+        </div>
+    </section>
+
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+            <img src="sports dark.jpg" alt="">
+            <h1>Welcome !</h1>
+            <h3>Don't have an account ?</h3>
+            <button type="button" class="switch-btn" onclick="switchSignup()">Signup</button>
+        </div>
+        <div id="right-form" class="form form-hide">
+            <h1>Signup</h1>
+            <form action="" method="post">
+                <input  type="text" id="text1" name="username" class="input-box"  onchange="validate()" placeholder="User Name">
+                <input type="email" id="text2" name="useremail" class="input-box" onchange="validate1()" placeholder="Email">
+                <input type="password" id="text3" name="userpass" class="input-box" onchange="validate2()" placeholder="Password">
+                <input type="password" id="text4" name="usercpass" class="input-box" onchange="validate3()" placeholder="Confirm Password">
+                    <input type="button"  onclick="validate4()" name="signup-btn" class="btn" value="Signup"><br>
+                    <a href="google form.html">
+                    <input type="button" name="next btn" class="btn" value="NEXT"></a>
+                
+            </form>
+        </div>
+                
+       
+    </section>
+
+    <script src="login and signup javascript.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+     }
+  .image1{
+    background-image:url(contact\ pic.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    border-width:inherit;
+  }
+  .contacting{
+    color:mediumblue;
+    font-weight:bolder;
+    text-shadow:4px 4px 5px brown;
+     position:fixed;
+    top: 5px;
+    width:100%;
+    text-align:center;
+
+  }
+  .heading2{
+    color:black;
+    font-weight:bolder;
+    text-shadow:4px 4px 5px brown;
+     position:fixed;
+    top: 80%;
+    width:100%;
+    text-align:center;
+  }
+  .social{
+    position:fixed;
+    left: 550px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .social a{
+    color: #fff;
+    background:rgba(0,0,0,0.7);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align:center;
+    border-radius: 50px;
+    transition: 1s;
+    transition-property: transform;
+    align-items: center;
+  }
+  
+  .social i{
+    margin-left: 5px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .social a:nth-child(1) i{
+    color: #1DA0F0;
+  }
+  
+  .social a:nth-child(2) i{
+    color:rgb(4, 23, 82);
+  }
+  
+  .social a:nth-child(3) i{
+    color: transparent;
+    background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
+    -webkit-background-clip: text;
+    font-weight: 600;
+  }
+  
+  .social a:nth-child(4) i{
+    color: green;
+  }
+      

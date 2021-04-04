@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <style>
+            body{
+                margin:0;
+                padding:0;
+                font-family: arial;
+            }
+            .container{
+                position:absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:100vh;
+                animation:animate 16s ease-in-out infinite;
+                background-size:cover;
+                border-style: solid;
+                border-width: 5px;
+            }
+            .outer{
+                position: absolute;
+                left:0;
+                top:0;
+                width:100%;
+                height:100vh;
+                background:rgba(0,0,0,0.5)
+            }
+            .details{
+                position: absolute;
+                left:50%;
+                top:50%;
+                transform:translate(-50%, -50%);
+                text-align:center;
+            }
+            .details h1{
+                font-size:8em;
+                font-variant: small-caps;
+                text-shadow:4px 4px 5px teal;
+                color:#fff;
+            }
+            nav{
+                width:100%;
+                height: 10px;
+            
+                
+            }
+           nav ul{
+                list-style-type: none;
+                margin:0;
+                padding: 0;
+                width:100%;
+                text-align: center;
+                background-color: tomato;
+            
+        
+            }
+            nav ul li{
+                list-style-type: none;
+                display: inline-block;
+               
+
+            }
+            nav ul li a{
+                text-decoration: none;
+                display: block;
+                padding:15px;
+                color:#fff;
+                font-size:17px;
+                font-family: Helvetica;
+              
+            } 
+             nav ul li a:hover{
+                background: #000;
+                transition: 0.6em;
+            }
+           
+            @keyframes animate{
+               
+                0%,100%{
+                   background-image: url(basketball.jpg);
+                }
+                20%{
+                   background-image: url(football\ -\ Copy.jpg);
+                }
+                40%{
+                   background-image: url(cricket.jpg);
+                }
+                60%{
+                   background-image: url(handball.jpg);
+                }
+                80%{
+                   background-image: url(swimming.jpg);
+                }
+                100%{
+                   background-image: url(volleyball\ -\ Copy.jpg);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="outer">
+               <div class="details">
+                <nav>
+                   <ul>
+                        <li><a href="homepage1.html">HOME</a></li>
+                        <li><a href="About page.html">ABOUT US</a></li>
+                        <li><a href="clubs.html">CLUBS</a></li>
+                        <li><a href="features page.html">FEATURES</a></li>
+                        <li><a href="developer.html">DEVELOPER</a></li>
+                        <li><a href="contact us.html">CONTACT US</a></li>
+                    </ul>
+                    </nav>
+                    <h1>WELCOME TO THE SPORTS CLUB</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

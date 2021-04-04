@@ -1,0 +1,56 @@
+.img-area{
+    background-image:url(screenshot.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    border-width:inherit;
+    border-color: black;
+}
+.heading{
+    color:white;
+    font-weight:bolder;
+    text-shadow:4px 4px 5px brown;
+     position:fixed;
+    top:20%;
+    width:100%;
+    text-align:center;
+}
+.button1{
+    top:70%;
+    left:45%;
+    position: fixed;
+    padding :10px 20px;
+    background-color:darkslateblue ;
+
+}
+.slider-text{
+    z-index: 2;
+    border: 1px solid #fff;
+    width: 650px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: crimson;
+    padding: 30px 35px;
+}
+.slider-text h1{
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    margin: 0;
+    font-family: baloo;
+}
+.slider-text p{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-family: poppins;
+    margin: 0 0 18px;
+}
